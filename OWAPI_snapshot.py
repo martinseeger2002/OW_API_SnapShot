@@ -39,6 +39,7 @@ def process_inscriptions(file_path):
         data = get_inscription_data(inscription_id)
         if data:
             results.append(data)
+        time.sleep(1)
         
         # Print progress
         print(f"Progress: {((index + 1) / total) * 100:.2f}%")
